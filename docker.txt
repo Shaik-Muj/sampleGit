@@ -72,6 +72,12 @@ FROM node :alpine
 WORKDIR / bhargavikumbham
 COPY  . /bhargavikumbham
 CMD node app.js
+
+FROM node:alpine
+WORKDIR /app
+COPY . .
+CMD ["node", "app.js"]
+
  
 3.	Press Esc-> :wq-> to save and exit
  
